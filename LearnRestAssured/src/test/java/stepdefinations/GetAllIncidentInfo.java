@@ -46,7 +46,7 @@ public class GetAllIncidentInfo {
 	public void user_should_get_the_responsr_in_the_js_on_format(String responseFormat) {
 	   if(responseFormat.equalsIgnoreCase("JSON")) {
 		   System.out.println("Response is expected JSON format");
-	   }else if(responseFormat.equalsIgnoreCase("XML")){
+	   }else{
 		   System.out.println("Response is not expected xml format");
 	   }
 	}
