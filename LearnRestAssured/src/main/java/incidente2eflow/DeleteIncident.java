@@ -5,36 +5,32 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 
-public class GetIncident {
+public class DeleteIncident {
+	
 
-/*	private UniqueData uniqueData;
-
-    @BeforeClass
-    public void setup() {
-        uniqueData = new UniqueData();
-    }
-*/
 	@Test
-	public static void getIncidentInfo() {
-		System.out.println("Get sysID info is "+CreateIncident.sysID);
-		RestAssured.given()
+	public static void deleteIncident() {	
+
+		ValidatableResponse response = RestAssured.given()
 				.baseUri("https://dev272818.service-now.com")
 				.basePath("/api/now/table/")
 				.auth()
 				.basic("admin", "lBWvJ1%Tb6/w")
 				.pathParam("tableName", "incident")
-	//			.pathParam("sys_id", uniqueData.globalsysID)
 				.pathParam("sys_id", CreateIncident.sysID)
 				.header("Content-Type", "application/json")
 				.log().all()
 				.when()
-				.get("{tableName}/{sys_id}")
+				.delete("{tableName}/{sys_id}")
 				.then()
-				.log().all()
-				.body("result.sys_id", Matchers.equalTo(CreateIncident.sysID));
-	
-	}
+				.log().all();
 
+
+		 response.statusCode(204)
+		.statusLine(Matchers.containsString("No Content"))
+		.time(Matchers.lessThan(5000l));
+	}
 }

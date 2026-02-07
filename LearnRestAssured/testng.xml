@@ -3,9 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="incidente2eflow.UniqueData"/>
+     
+      <!--class name="incidente2eflow.CreateMultiIncident"/-->
       <class name="incidente2eflow.CreateIncident"/>
       <class name="incidente2eflow.GetIncident"/>
+      <class name="incidente2eflow.PutIncident"/>
+      <class name="incidente2eflow.DeleteIncident"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

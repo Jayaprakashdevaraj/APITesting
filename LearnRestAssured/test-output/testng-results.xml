@@ -1,71 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-01T19:20:10 IST" name="Suite" finished-at="2026-02-01T19:20:15 IST" duration-ms="4760">
+  <suite started-at="2026-02-07T12:43:58 IST" name="Default suite" finished-at="2026-02-07T12:44:04 IST" duration-ms="5628">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@79079097]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-01T19:20:10 IST" name="Test" finished-at="2026-02-01T19:20:15 IST" duration-ms="4760">
-      <class name="incidente2eflow.GetIncident">
-        <test-method is-config="true" signature="setup()[pri:0, instance:incidente2eflow.GetIncident@26d9b808]" started-at="2026-02-01T19:20:15 IST" name="setup" finished-at="2026-02-01T19:20:15 IST" duration-ms="1" status="PASS">
+    <test started-at="2026-02-07T12:43:58 IST" name="Default test" finished-at="2026-02-07T12:44:04 IST" duration-ms="5628">
+      <class name="runner.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGRunner@79079097]" started-at="2026-02-07T12:43:58 IST" name="setUpClass" finished-at="2026-02-07T12:43:59 IST" duration-ms="560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@250d440]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="getIncidentInfo(java.lang.String)[pri:0, instance:incidente2eflow.GetIncident@26d9b808]" started-at="2026-02-01T19:20:15 IST" name="getIncidentInfo" finished-at="2026-02-01T19:20:15 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Cannot inject @Test annotated Method [getIncidentInfo] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [getIncidentInfo] with [class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:959)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@79079097]" started-at="2026-02-07T12:43:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-07T12:44:04 IST" duration-ms="4984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate user should able to fetch all records from the incident table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate the CURD operation of the serviceNow incident table API"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getIncidentInfo -->
-      </class> <!-- incidente2eflow.GetIncident -->
-      <class name="incidente2eflow.CreateIncident">
-        <test-method is-config="true" signature="setup()[pri:0, instance:incidente2eflow.CreateIncident@2ddc9a9f]" started-at="2026-02-01T19:20:10 IST" name="setup" finished-at="2026-02-01T19:20:10 IST" duration-ms="12" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@79079097]" started-at="2026-02-07T12:44:04 IST" name="tearDownClass" finished-at="2026-02-07T12:44:04 IST" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="createNewIncident()[pri:0, instance:incidente2eflow.CreateIncident@2ddc9a9f]" started-at="2026-02-01T19:20:10 IST" name="createNewIncident" finished-at="2026-02-01T19:20:15 IST" duration-ms="4698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewIncident -->
-      </class> <!-- incidente2eflow.CreateIncident -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestNGRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,12 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="incidente2eflow.GetIncident">
+      <class name="incidente2eflowwithMultiSysID.GetIncident">
         <methods>
           <include name="getIncidentInfo"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- incidente2eflow.GetIncident -->
+      </class> <!-- incidente2eflowwithMultiSysID.GetIncident -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

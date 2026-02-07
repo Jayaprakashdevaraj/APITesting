@@ -21,7 +21,7 @@ public class ValidateResponseBodyForMultiData {
 		return new String[][] {
 			{"Shortdes-1", "Des-1", "Software", "1"},
 			{"Shortdes-2", "Des-2", "hardware", "2"},
-			{"Shortdes-3", "Desresponse-3", "database", "3"}
+			{"Shortdes-3", "Des-3", "database", "3"}
 		};
 	}
 	

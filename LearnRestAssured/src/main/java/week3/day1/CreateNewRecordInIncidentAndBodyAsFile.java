@@ -12,8 +12,8 @@ public class CreateNewRecordInIncidentAndBodyAsFile {
 
 	static File requestBodyAsJSON = new File("src/main/resources/Data/RequestBody_JSON_Format.json");
 	static File requestBodyAsCSV = new File("src/main/resources/Data/testdata.csv");
+	
 	public static void main(String[] args) {
-
 		given()
 			.baseUri("https://dev272818.service-now.com")
 			.basePath("/api/now/table/")
@@ -31,8 +31,6 @@ public class CreateNewRecordInIncidentAndBodyAsFile {
 			.statusCode(201)
 			.statusLine(Matchers.containsString("Created"))
 			.contentType(ContentType.JSON);
-		
-
 	}
 
 }

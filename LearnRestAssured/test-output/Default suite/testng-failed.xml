@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="week3.day2.CreateNewRecordInIncidentwithMultiData">
+      <class name="runner.TestNGRunner">
         <methods>
-          <include name="run"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- week3.day2.CreateNewRecordInIncidentwithMultiData -->
+      </class> <!-- runner.TestNGRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
