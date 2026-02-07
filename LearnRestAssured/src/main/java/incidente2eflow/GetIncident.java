@@ -25,7 +25,6 @@ public class GetIncident {
 				.auth()
 				.basic("admin", "lBWvJ1%Tb6/w")
 				.pathParam("tableName", "incident")
-	//			.pathParam("sys_id", uniqueData.globalsysID)
 				.pathParam("sys_id", CreateIncident.sysID)
 				.header("Content-Type", "application/json")
 				.log().all()
@@ -33,6 +32,8 @@ public class GetIncident {
 				.get("{tableName}/{sys_id}")
 				.then()
 				.log().all()
+				.statusCode(200)
+				.statusLine(Matchers.containsString("OK"))
 				.body("result.sys_id", Matchers.equalTo(CreateIncident.sysID));
 	
 	}

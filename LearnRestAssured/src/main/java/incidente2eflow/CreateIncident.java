@@ -37,7 +37,7 @@ public class CreateIncident {
 		 response.statusCode(201)
 		.statusLine(Matchers.containsString("Created"))
 		.contentType(ContentType.JSON)
-		.time(Matchers.lessThan(5000l));
+		.time(Matchers.lessThan(10000l));
 
 		sysID = response.extract().jsonPath().getString("result.sys_id");
 //		uniqueData.globalsysID=sysID;

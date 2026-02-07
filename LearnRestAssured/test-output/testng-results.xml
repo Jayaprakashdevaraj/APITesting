@@ -1,47 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-07T12:43:58 IST" name="Default suite" finished-at="2026-02-07T12:44:04 IST" duration-ms="5628">
+  <suite started-at="2026-02-07T17:25:59 IST" name="Suite" finished-at="2026-02-07T17:26:12 IST" duration-ms="12956">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@79079097]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-02-07T12:43:58 IST" name="Default test" finished-at="2026-02-07T12:44:04 IST" duration-ms="5628">
-      <class name="runner.TestNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestNGRunner@79079097]" started-at="2026-02-07T12:43:58 IST" name="setUpClass" finished-at="2026-02-07T12:43:59 IST" duration-ms="560" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@250d440]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2026-02-07T17:25:59 IST" name="Test" finished-at="2026-02-07T17:26:12 IST" duration-ms="12956">
+      <class name="incidente2eflow.GetIncident">
+        <test-method signature="getIncidentInfo()[pri:0, instance:incidente2eflow.GetIncident@34123d65]" started-at="2026-02-07T17:26:06 IST" name="getIncidentInfo" finished-at="2026-02-07T17:26:07 IST" duration-ms="1913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNGRunner@79079097]" started-at="2026-02-07T12:43:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-07T12:44:04 IST" duration-ms="4984" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["validate user should able to fetch all records from the incident table"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate the CURD operation of the serviceNow incident table API"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getIncidentInfo -->
+      </class> <!-- incidente2eflow.GetIncident -->
+      <class name="incidente2eflow.PutIncident">
+        <test-method signature="updateExistingIncident()[pri:0, instance:incidente2eflow.PutIncident@59474f18]" started-at="2026-02-07T17:26:07 IST" name="updateExistingIncident" finished-at="2026-02-07T17:26:10 IST" duration-ms="2090" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestNGRunner@79079097]" started-at="2026-02-07T12:44:04 IST" name="tearDownClass" finished-at="2026-02-07T12:44:04 IST" duration-ms="35" status="PASS">
+        </test-method> <!-- updateExistingIncident -->
+      </class> <!-- incidente2eflow.PutIncident -->
+      <class name="incidente2eflow.CreateIncident">
+        <test-method signature="createNewIncident()[pri:0, instance:incidente2eflow.CreateIncident@3270d194]" started-at="2026-02-07T17:25:59 IST" name="createNewIncident" finished-at="2026-02-07T17:26:06 IST" duration-ms="6259" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.TestNGRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- createNewIncident -->
+      </class> <!-- incidente2eflow.CreateIncident -->
+      <class name="incidente2eflow.DeleteIncident">
+        <test-method signature="deleteIncident()[pri:0, instance:incidente2eflow.DeleteIncident@65fb9ffc]" started-at="2026-02-07T17:26:10 IST" name="deleteIncident" finished-at="2026-02-07T17:26:12 IST" duration-ms="2613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteIncident -->
+      </class> <!-- incidente2eflow.DeleteIncident -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -11,7 +11,7 @@ public class CreateNewRecordInIncidentAndBodyAsString {
 	static String requestBody = """
 			{
 			"description": "Test incident creation 1",
-			"short_description": "Test incident short_description 1"
+			"short_description": "Test incident short description 1"
 			}
 			""";
 	public static void main(String[] args) {
