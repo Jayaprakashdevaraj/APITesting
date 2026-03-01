@@ -1,35 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-07T17:25:59 IST" name="Suite" finished-at="2026-02-07T17:26:12 IST" duration-ms="12956">
+  <suite started-at="2026-02-21T17:27:20 IST" name="Default suite" finished-at="2026-02-21T17:27:20 IST" duration-ms="48">
     <groups>
     </groups>
-    <test started-at="2026-02-07T17:25:59 IST" name="Test" finished-at="2026-02-07T17:26:12 IST" duration-ms="12956">
-      <class name="incidente2eflow.GetIncident">
-        <test-method signature="getIncidentInfo()[pri:0, instance:incidente2eflow.GetIncident@34123d65]" started-at="2026-02-07T17:26:06 IST" name="getIncidentInfo" finished-at="2026-02-07T17:26:07 IST" duration-ms="1913" status="PASS">
+    <test started-at="2026-02-21T17:27:20 IST" name="Default test" finished-at="2026-02-21T17:27:20 IST" duration-ms="48">
+      <class name="week6.day1.UserAPI">
+        <test-method is-config="true" signature="startServer()[pri:0, instance:week6.day1.UserAPI@ea9e141]" started-at="2026-02-21T17:27:20 IST" name="startServer" finished-at="2026-02-21T17:27:20 IST" duration-ms="18" status="FAIL">
+          <exception class="com.github.tomakehurst.wiremock.common.FatalStartupException">
+            <message>
+              <![CDATA[com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.github.tomakehurst.wiremock.common.FatalStartupException: com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080
+at com.github.tomakehurst.wiremock.WireMockServer.start(WireMockServer.java:187)
+at week6.day1.UserAPI.startServer(UserAPI.java:102)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080
+at com.github.tomakehurst.wiremock.jetty.JettyHttpServer.start(JettyHttpServer.java:152)
+at com.github.tomakehurst.wiremock.WireMockServer.start(WireMockServer.java:185)
+... 18 more
+Caused by: java.io.IOException: Failed to bind to /0.0.0.0:8080
+at wiremock.org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349)
+at wiremock.org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:313)
+at wiremock.org.eclipse.jetty.server.Server.lambda$doStart$0(Server.java:617)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+at wiremock.org.eclipse.jetty.server.Server.doStart(Server.java:613)
+at wiremock.org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:92)
+at com.github.tomakehurst.wiremock.jetty.JettyHttpServer.start(JettyHttpServer.java:147)
+... 19 more
+Caused by: java.net.BindException: Address already in use: bind
+at java.base/sun.nio.ch.Net.bind0(Native Method)
+at java.base/sun.nio.ch.Net.bind(Net.java:565)
+at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+at wiremock.org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.github.tomakehurst.wiremock.common.FatalStartupException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getIncidentInfo -->
-      </class> <!-- incidente2eflow.GetIncident -->
-      <class name="incidente2eflow.PutIncident">
-        <test-method signature="updateExistingIncident()[pri:0, instance:incidente2eflow.PutIncident@59474f18]" started-at="2026-02-07T17:26:07 IST" name="updateExistingIncident" finished-at="2026-02-07T17:26:10 IST" duration-ms="2090" status="PASS">
+        </test-method> <!-- startServer -->
+        <test-method is-config="true" signature="beforeRequest()[pri:0, instance:week6.day1.UserAPI@ea9e141]" started-at="2026-02-21T17:27:20 IST" name="beforeRequest" finished-at="2026-02-21T17:27:20 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateExistingIncident -->
-      </class> <!-- incidente2eflow.PutIncident -->
-      <class name="incidente2eflow.CreateIncident">
-        <test-method signature="createNewIncident()[pri:0, instance:incidente2eflow.CreateIncident@3270d194]" started-at="2026-02-07T17:25:59 IST" name="createNewIncident" finished-at="2026-02-07T17:26:06 IST" duration-ms="6259" status="PASS">
+        </test-method> <!-- beforeRequest -->
+        <test-method signature="validateGetAllUser()[pri:0, instance:week6.day1.UserAPI@ea9e141]" started-at="2026-02-21T17:27:20 IST" name="validateGetAllUser" finished-at="2026-02-21T17:27:20 IST" duration-ms="1" status="SKIP">
+          <exception class="com.github.tomakehurst.wiremock.common.FatalStartupException">
+            <message>
+              <![CDATA[com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.github.tomakehurst.wiremock.common.FatalStartupException: com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080
+at com.github.tomakehurst.wiremock.WireMockServer.start(WireMockServer.java:187)
+at week6.day1.UserAPI.startServer(UserAPI.java:102)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080
+at com.github.tomakehurst.wiremock.jetty.JettyHttpServer.start(JettyHttpServer.java:152)
+at com.github.tomakehurst.wiremock.WireMockServer.start(WireMockServer.java:185)
+... 18 more
+Caused by: java.io.IOException: Failed to bind to /0.0.0.0:8080
+at wiremock.org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349)
+at wiremock.org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:313)
+at wiremock.org.eclipse.jetty.server.Server.lambda$doStart$0(Server.java:617)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+at wiremock.org.eclipse.jetty.server.Server.doStart(Server.java:613)
+at wiremock.org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:92)
+at com.github.tomakehurst.wiremock.jetty.JettyHttpServer.start(JettyHttpServer.java:147)
+... 19 more
+Caused by: java.net.BindException: Address already in use: bind
+at java.base/sun.nio.ch.Net.bind0(Native Method)
+at java.base/sun.nio.ch.Net.bind(Net.java:565)
+at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+at wiremock.org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344)
+... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.github.tomakehurst.wiremock.common.FatalStartupException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createNewIncident -->
-      </class> <!-- incidente2eflow.CreateIncident -->
-      <class name="incidente2eflow.DeleteIncident">
-        <test-method signature="deleteIncident()[pri:0, instance:incidente2eflow.DeleteIncident@65fb9ffc]" started-at="2026-02-07T17:26:10 IST" name="deleteIncident" finished-at="2026-02-07T17:26:12 IST" duration-ms="2613" status="PASS">
+        </test-method> <!-- validateGetAllUser -->
+        <test-method is-config="true" signature="stopServer()[pri:0, instance:week6.day1.UserAPI@ea9e141]" started-at="2026-02-21T17:27:20 IST" name="stopServer" finished-at="2026-02-21T17:27:20 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteIncident -->
-      </class> <!-- incidente2eflow.DeleteIncident -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- stopServer -->
+      </class> <!-- week6.day1.UserAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

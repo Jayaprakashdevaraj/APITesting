@@ -8,14 +8,112 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,956</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">48</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">incidente2eflow.CreateIncident</td><td><a href="#m0">createNewIncident</a></td><td rowspan="1">1770465359784</td><td rowspan="1">6259</td></tr><tr class="passedodd"><td rowspan="1">incidente2eflow.DeleteIncident</td><td><a href="#m1">deleteIncident</a></td><td rowspan="1">1770465370058</td><td rowspan="1">2613</td></tr><tr class="passedeven"><td rowspan="1">incidente2eflow.GetIncident</td><td><a href="#m2">getIncidentInfo</a></td><td rowspan="1">1770465366051</td><td rowspan="1">1913</td></tr><tr class="passedodd"><td rowspan="1">incidente2eflow.PutIncident</td><td><a href="#m3">updateExistingIncident</a></td><td rowspan="1">1770465367965</td><td rowspan="1">2090</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">week6.day1.UserAPI</td><td><a href="#m0">startServer</a></td><td rowspan="1">1771675040398</td><td rowspan="1">18</td></tr><tr><th colspan="4">Default test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">week6.day1.UserAPI</td><td><a href="#m1">beforeRequest</a></td><td rowspan="1">1771675040455</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">stopServer</a></td><td rowspan="1">1771675040540</td><td rowspan="1">0</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">week6.day1.UserAPI</td><td><a href="#m3">validateGetAllUser</a></td><td rowspan="1">1771675040469</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">incidente2eflow.CreateIncident#createNewIncident</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">incidente2eflow.DeleteIncident#deleteIncident</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">incidente2eflow.GetIncident#getIncidentInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">incidente2eflow.PutIncident#updateExistingIncident</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">week6.day1.UserAPI#startServer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.github.tomakehurst.wiremock.common.FatalStartupException: com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at com.github.tomakehurst.wiremock.WireMockServer.start(WireMockServer.java:187)
+	at week6.day1.UserAPI.startServer(UserAPI.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at com.github.tomakehurst.wiremock.jetty.JettyHttpServer.start(JettyHttpServer.java:152)
+	at com.github.tomakehurst.wiremock.WireMockServer.start(WireMockServer.java:185)
+	... 18 more
+Caused by: java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at wiremock.org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349)
+	at wiremock.org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:313)
+	at wiremock.org.eclipse.jetty.server.Server.lambda$doStart$0(Server.java:617)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at wiremock.org.eclipse.jetty.server.Server.doStart(Server.java:613)
+	at wiremock.org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:92)
+	at com.github.tomakehurst.wiremock.jetty.JettyHttpServer.start(JettyHttpServer.java:147)
+	... 19 more
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at wiremock.org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344)
+	... 34 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">week6.day1.UserAPI#beforeRequest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">week6.day1.UserAPI#stopServer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">week6.day1.UserAPI#validateGetAllUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.github.tomakehurst.wiremock.common.FatalStartupException: com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at com.github.tomakehurst.wiremock.WireMockServer.start(WireMockServer.java:187)
+	at week6.day1.UserAPI.startServer(UserAPI.java:102)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.github.tomakehurst.wiremock.common.FatalStartupException: java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at com.github.tomakehurst.wiremock.jetty.JettyHttpServer.start(JettyHttpServer.java:152)
+	at com.github.tomakehurst.wiremock.WireMockServer.start(WireMockServer.java:185)
+	... 18 more
+Caused by: java.io.IOException: Failed to bind to /0.0.0.0:8080
+	at wiremock.org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:349)
+	at wiremock.org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:313)
+	at wiremock.org.eclipse.jetty.server.Server.lambda$doStart$0(Server.java:617)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at wiremock.org.eclipse.jetty.server.Server.doStart(Server.java:613)
+	at wiremock.org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:92)
+	at com.github.tomakehurst.wiremock.jetty.JettyHttpServer.start(JettyHttpServer.java:147)
+	... 19 more
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at wiremock.org.eclipse.jetty.server.ServerConnector.openAcceptChannel(ServerConnector.java:344)
+	... 34 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

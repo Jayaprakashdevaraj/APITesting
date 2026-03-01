@@ -1,4 +1,4 @@
-package incidente2eflow;
+package week4.day2;
 
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeClass;
@@ -8,10 +8,7 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 
-public class CreateIncident {
-	static private PojoInfo pi = new PojoInfo(); 
-	
-	public static String sysID;
+public class CreateIncident extends ServiceNowBase {
 	
 	@Test
 	public void createNewIncident() {	
@@ -21,11 +18,7 @@ public class CreateIncident {
 		pi.setState("1");
 		
 		 ValidatableResponse response = RestAssured.given()
-				.baseUri("https://dev272818.service-now.com")
-				.basePath("/api/now/table/")
-				.auth()
-				.basic("admin", "lBWvJ1%Tb6/w")
-				.pathParam("tableName", "incident")
+				.spec(rs.build())
 				.header("Content-Type", "application/json")
 				.log().all()
 				.when()

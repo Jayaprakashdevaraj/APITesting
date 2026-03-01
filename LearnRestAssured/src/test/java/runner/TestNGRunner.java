@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-		features = {"src/test/java/feature/GetAllIncident.feature"},
+		features = {"src/test/java/feature/LearnScenarioOutline.feature:24"},
 		glue = {"stepdefinations"},
 		dryRun = false,
 		plugin = {
